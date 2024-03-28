@@ -19,31 +19,11 @@ jobs:
         username: visadmin
         password: oacdUcsf1vis!
         script: |
+          dir
           echo "Connected to Windows instance via SSH."
           cd C:\Users\visadmin\Desktop\env-test\datatool_be
+          echo "Current directory:"
+          pwd
+          echo "Python version:"
+          python --version
           python -m venv myenv
-      
-    # - run: |
-        
-    #     # git pull https://jitendrasankhla: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@github.com/Velocity-Investment-Solutions/datatool_be.git
-    #     # python3 -m venv myenv
-    #     # .\myenv\Scripts\Activate
-    #     # pip install -r requirements.txt
-    #     # uvicorn app:app --host 0.0.0.0 --port 8080 -w 4 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
