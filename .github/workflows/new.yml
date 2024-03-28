@@ -19,7 +19,6 @@ jobs:
         username: visadmin
         password: oacdUcsf1vis!
         script: |
-          # Add your SSH commands here
           echo "Connected to Windows instance via SSH."
       
     # - run: |
