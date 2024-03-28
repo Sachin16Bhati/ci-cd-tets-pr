@@ -21,7 +21,7 @@ jobs:
         script: |
           dir
           echo "Connected to Windows instance via SSH."
-          cd "C:\\Users\\visadmin\\Desktop\\env-test\\datatool_be" || echo "Failed to change directory"
+          cd "Desktop\env-test\datatool_be" || echo "Failed to change directory"
           echo "Current directory:"
           pwd
           echo "Python version:"
