@@ -12,8 +12,25 @@ jobs:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
-    - run: |
-        echo The PR was merged
+    - name: SSH into Windows
+      uses: appleboy/ssh-action@master
+      with:
+        host: 74.249.99.126
+        username: visadmin
+        password: oacdUcsf1vis!
+        script: |
+          # Add your SSH commands here
+          echo "Connected to Windows instance via SSH."
+      
+    # - run: |
+        
+    #     # git pull https://jitendrasankhla:ghp_UEYRnnv6i8STHpfPZH9dTe6s@github.com/Velocity-Investment-Solutions/datatool_be.git
+    #     # python3 -m venv myenv
+    #     # .\myenv\Scripts\Activate
+    #     # pip install -r requirements.txt
+    #     # uvicorn app:app --host 0.0.0.0 --port 8080 -w 4 
+
+
 
 
 
