@@ -21,10 +21,13 @@ jobs:
         script: |
           dir
           echo "Connected to Windows instance via SSH."
+          cd C:\Users\visadmin\Desktop\env-test\datatool_be
+          git pull https://jitendrasankhla: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@github.com/Velocity-Investment-Solutions/datatool_be.git
+          python3 -m venv myenv
       
     # - run: |
         
-    #     # git pull https://jitendrasankhla:ghp_UEYRnnv6i8STHpfPZH9dTe6s@github.com/Velocity-Investment-Solutions/datatool_be.git
+    #     # git pull https://jitendrasankhla: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@github.com/Velocity-Investment-Solutions/datatool_be.git
     #     # python3 -m venv myenv
     #     # .\myenv\Scripts\Activate
     #     # pip install -r requirements.txt
