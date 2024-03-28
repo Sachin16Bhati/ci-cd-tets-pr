@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: SSH into Windows
-      uses: appleboy/ssh-action@master
+      uses: webfactory/ssh-action@v2
       with:
         host: 74.249.99.126
         username: visadmin
