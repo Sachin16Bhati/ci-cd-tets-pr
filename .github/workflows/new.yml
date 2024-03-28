@@ -18,6 +18,7 @@ jobs:
         host: 74.249.99.126
         username: visadmin
         password: oacdUcsf1vis!
+        target: C:\Users\visadmin\Desktop\env-test\datatool_be
         script: |
           dir
           echo "Connected to Windows instance via SSH."
